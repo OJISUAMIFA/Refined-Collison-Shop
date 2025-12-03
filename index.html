@@ -224,5 +224,75 @@
   </div>
 
   <script src="script.js"></script>
+
+  <script>
+    var vapiInstance = null;
+    const assistant = "cdf75d65-259a-4c2f-8679-cc10125bcf34"; 
+    const apiKey = "e08febc0-22fb-47af-b348-f5b5afe3cb32";   
+
+    // 🔹 Updated Vapi button styling (mobile smaller + active = #2563eb)
+    const buttonConfig = {
+      // position: "bottom-right",
+      // offset: "28px",
+
+      // width: "64px",
+      // height: "64px",
+
+      // // 🔹 Mobile responsive size
+      // mobile: {
+      //   width: "52px", 
+      //   height: "52px",
+      //   offset: "18px",
+      // },
+
+      // // IDLE state
+      // idle: {
+      //   color: "#2563eb",
+      //   type: "pill",
+      //   title: "Need help?",
+      //   subtitle: "Talk to our AI assistant",
+      //   icon: "https://unpkg.com/lucide-static@0.321.0/icons/mic.svg",
+      // },
+
+      // // CONNECTING state
+      // loading: {
+      //   color: "#2563eb", // brand blue while connecting
+      //   type: "pill",
+      //   title: "Connecting...",
+      //   subtitle: "One sec...",
+      //   icon: "https://unpkg.com/lucide-static@0.321.0/icons/loader-2.svg",
+      // },
+
+      // // ACTIVE CALL state
+      // active: {
+      //   color: "#2563eb", // 🔵 
+      //   type: "pill",
+      //   title: "On a call",
+      //   subtitle: "Tap to end",
+      //   icon: "https://unpkg.com/lucide-static@0.321.0/icons/phone-off.svg",
+      // },
+    };
+
+    (function (d, t) {
+      var g = document.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+      g.src =
+        "https://cdn.jsdelivr.net/gh/VapiAI/html-script-tag@latest/dist/assets/index.js";
+      g.defer = true;
+      g.async = true;
+      s.parentNode.insertBefore(g, s);
+
+      g.onload = function () {
+        vapiInstance = window.vapiSDK.run({
+          apiKey: apiKey,
+          assistant: assistant,
+          config: buttonConfig,
+        });
+      };
+    })(document, "script");
+  </script>
+
+
+
 </body>
 </html>

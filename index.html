@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Refined Collision — Auto Body & Paint Shop, Houston</title>
+  <meta name="description" content="Refined Collision — full-service collision repair, paint-matching, frame straightening, and insurance assistance in Houston, TX. Free estimates.">
+  <link rel="icon" href="images/Logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"AutoRepair",
+    "name":"Refined Collision",
+    "image":["/mnt/data/1ee77e1d-5d05-4f12-b4f0-82b8e5ced978.png"],
+    "@id":"https://refinedcollision.example",
+    "url":"https://refinedcollision.example",
+    "telephone":"+17138329989",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"9205 Ronda Lane",
+      "addressLocality":"Houston",
+      "addressRegion":"TX",
+      "postalCode":"77074",
+      "addressCountry":"US"
+    },
+    "openingHours":["Mo-Fr 08:00-17:00"],
+    "priceRange":"$$"
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner" role="toolbar" aria-label="Top toolbar">
+      <a class="brand" href="#" aria-label="Refined Collision home">
+        <img class="brand-logo" src="images/Logo.png" alt="Refined Collision logo">
+        <div class="brand-text">
+          <span class="brand-title">Refined Collision</span>
+          <span class="brand-sub">Auto Body & Paint • Houston, TX</span>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation" id="primaryNav">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-ghost" href="tel:7138329989" aria-label="Call Refined Collision"><span>(713) 832-9989</span></a>
+        <button class="btn btn-primary" id="requestBtn" aria-controls="contact">Request Estimate</button>
+        <button id="menuToggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- mobile slide-over -->
+    <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+      <button id="closeMobile" class="mobile-close" aria-label="Close menu">&times;</button>
+      <ul class="mobile-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="mobile-cta">
+        <a class="btn btn-primary" href="#contact">Request Estimate</a>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=9205%20Ronda%20Lane%20Houston" target="_blank" rel="noopener">Directions</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Collision Repair & Paint <br> Restoring Vehicles to Showroom Condition</h1>
+            <p>OEM parts, precision color-matching, frame straightening, and insurance-friendly workflow. 
+            We focus on safety, durability, and a finish you'll be proud of.</p>
+
+            <div class="buttons">
+                <a class="btn-primary" href="#">Get a Free Estimate</a>
+                <a class="btn-call" href="tel:7138329989">(713) 832-9989</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container grid-layout">
+      <!-- Main column -->
+      <section class="content" aria-live="polite">
+        <article class="card about" id="about">
+          <h2>Why Refined Collision</h2>
+          <p class="muted">Combining experienced technicians, modern equipment, and transparent communication. From small dents to structural repairs, we deliver a safe, factory-quality repair.</p>
+          <ul class="benefits">
+            <li><strong>Free estimates</strong> — in-shop or phone</li>
+            <li><strong>Insurance coordination</strong> — we assist with claims</li>
+            <li><strong>OEM parts</strong> or high-quality alternatives</li>
+            <li><strong>Precision color matching</strong> with factory formulas</li>
+          </ul>
+        </article>
+
+        <article class="card services" id="services">
+          <h2>Services</h2>
+          <div class="services-grid">
+            <div class="service">
+              <h3>Collision Repair</h3>
+              <p>Frame alignment, welding, structural repair and certified safety checks.</p>
+            </div>
+            <div class="service">
+              <h3>Paint & Refinishing</h3>
+              <p>Multi-stage painting, clear coat, and finishing techniques for durable, glossy results.</p>
+            </div>
+            <div class="service">
+              <h3>Detailing & Reconditioning</h3>
+              <p>Thorough interior and exterior prep to return the vehicle to showroom condition.</p>
+            </div>
+            <div class="service">
+              <h3>Claims Assistance</h3>
+              <p>We simplify the process — direct billing available with certain carriers.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" id="gallery" aria-labelledby="galleryHeading">
+          <div class="card-header">
+            <h2 id="galleryHeading">Gallery</h2>
+            <p class="muted">Before & After — real repair work. (Demo images)</p>
+          </div>
+          <div class="gallery-grid" id="galleryGrid" role="list">
+            <!-- wrap each image in figure (role=listitem) for semantics -->
+            <figure role="listitem"><img src="/mnt/data/1ee77e1d-5d05-4f12-b4f0-82b8e5ced978.png" alt="Repair example 1"></figure>
+            <figure role="listitem"><img src="/mnt/data/1ee77e1d-5d05-4f12-b4f0-82b8e5ced978.png" alt="Repair example 2"></figure>
+            <figure role="listitem"><img src="/mnt/data/1ee77e1d-5d05-4f12-b4f0-82b8e5ced978.png" alt="Repair example 3"></figure>
+            <figure role="listitem"><img src="/mnt/data/1ee77e1d-5d05-4f12-b4f0-82b8e5ced978.png" alt="Repair example 4"></figure>
+            <figure role="listitem"><img src="/mnt/data/1ee77e1d-5d05-4f12-b4f0-82b8e5ced978.png" alt="Repair example 5"></figure>
+            <figure role="listitem"><img src="/mnt/data/1ee77e1d-5d05-4f12-b4f0-82b8e5ced978.png" alt="Repair example 6"></figure>
+          </div>
+        </article>
+
+        <article class="card" id="reviews">
+          <h2>Reviews</h2>
+          <div class="testimonials" id="testimonials" aria-live="polite">
+            <div class="testimonial active">
+              <p class="quote">“Great service and very communicative — fixed my truck fast.”</p>
+              <p class="reviewer">— Danny L.</p>
+            </div>
+            <div class="testimonial">
+              <p class="quote">“They worked with my insurance and got my car back looking new.”</p>
+              <p class="reviewer">— A. Rasa</p>
+            </div>
+            <div class="testimonial">
+              <p class="quote">“Professional, fast, and honest pricing.”</p>
+              <p class="reviewer">— M. Ortega</p>
+            </div>
+            <div class="testimonial-controls" aria-hidden="false">
+              <button class="t-prev" aria-label="Previous review">‹</button>
+              <button class="t-next" aria-label="Next review">›</button>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Sidebar -->
+      <aside class="sidebar" aria-label="Sidebar">
+        <div class="card contact-card" id="contact">
+          <h3>Request an Estimate</h3>
+          <p class="muted">Tell us a few details and we'll respond quickly.</p>
+
+          <form id="estimateForm" class="form" novalidate>
+            <label for="name" class="sr-only">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+
+            <label for="contactInfo" class="sr-only">Phone or Email</label>
+            <input id="contactInfo" name="contact" type="text" placeholder="Phone or email" autocomplete="tel email" required>
+
+            <label for="desc" class="sr-only">Short description</label>
+            <textarea id="desc" name="desc" rows="4" placeholder="Brief description of damage"></textarea>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Send Request</button>
+              <a class="btn btn-ghost" href="tel:7138329989">Call Now</a>
+            </div>
+
+            <p id="formMsg" class="form-msg" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <div class="card quick-info">
+          <h4>Quick Info</h4>
+          <p><strong>Address:</strong><br>9205 Ronda Lane, Houston, TX 77074</p>
+          <p><strong>Hours:</strong><br>Mon–Fri: 8am–5pm</p>
+          <p><strong>Email:</strong><br><a href="mailto:info@refinedcollision.com">info@refinedcollision.com</a></p>
+
+          <!-- Embedded map (replace src with your own Google Maps embed URL if desired) -->
+          <div class="map-wrap" aria-hidden="false">
+            <iframe title="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=9205+Ronda+Lane+Houston&output=embed"></iframe>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© Refined Collision — All rights reserved • Demo content</small>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-hidden="true" aria-label="Image preview">
+    <button id="lbClose" class="lightbox-close" aria-label="Close preview">&times;</button>
+    <button id="lbPrev" class="lightbox-nav" aria-label="Previous image">‹</button>
+    <img id="lbImage" src="" alt="">
+    <button id="lbNext" class="lightbox-nav" aria-label="Next image">›</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
